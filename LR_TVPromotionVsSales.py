@@ -3,6 +3,10 @@
 Created on Mon Apr 18 16:16:47 2022
 
 @author: Sandumi Jayasekara
+
+Linear Regression Model 
+
+TV Promotion Vs Sales
 """
 
 import DataPreProcessing as pross
