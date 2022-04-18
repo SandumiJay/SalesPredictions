@@ -26,6 +26,12 @@ def dataPreProcess(filepath):
     X.iloc[:,0:3]=imputer.transform(X.iloc[:,0:3])
     
     
+    print(Y.iloc[:])
+    Y=Y.iloc[:].values.reshape(-1, 1)
+    imputer.fit(Y)
+    Y=imputer.transform(Y)
+    
+    
     imputer2 = SimpleImputer(missing_values= np.nan, strategy ='most_frequent')
     imputer2.fit(X.iloc[:,3:])
     X.iloc[:,3:]=imputer2.transform(X.iloc[:,3:])
