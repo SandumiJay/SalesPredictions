@@ -39,6 +39,7 @@ plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Social Media Promotion vs Sales (Training set)')
 plt.xlabel('Social Media Promotion (millions)')
 plt.ylabel('Sales')
+plt.savefig('plots/Social Media vs Sales (Training set).png')
 plt.show()
 
 
@@ -47,6 +48,7 @@ plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Social Media Promotion vs Sales (Test set)')
 plt.xlabel('Social Media Promotion (millions)')
 plt.ylabel('Sales')
+plt.savefig('plots/Social Media vs Sales (Test set).png')
 plt.show()
 
 print("********************Regression Equation **********************")
